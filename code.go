@@ -7,7 +7,7 @@ import (
 func main() {
 
 	yes := true
-	if yes == true {
+	if yes {
 		fmt.Println("My name is Gor")
 	}
 
