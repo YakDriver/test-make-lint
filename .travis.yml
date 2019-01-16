@@ -1,0 +1,24 @@
+dist: trusty
+sudo: required
+services:
+  - docker
+language: go
+go:
+- "1.11.1"
+
+git:
+  depth: 1
+
+install:
+- make tools
+
+script:
+- make lint
+
+branches:
+  only:
+  - master
+matrix:
+  fast_finish: true
+  allow_failures:
+  - go: tip
