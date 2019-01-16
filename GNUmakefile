@@ -32,7 +32,7 @@ websitefmtcheck:
 
 lint:
 	@echo "==> Checking source code against linters..."
-	@gometalinter ./$(PKG_NAME)
+	@gometalinter .
 
 tools:
 	go get -u github.com/kardianos/govendor
